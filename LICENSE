@@ -1,5 +1,16 @@
 MIT License
 
+### 4. **Dependencies (`requirements.txt`)**
+
+In `requirements.txt`, specify dependencies to start the project:
+
+```plaintext
+PyGithub==1.55
+pylint==2.12.2
+flake8==4.0.1
+pytest==7.1.2
+
+
 Copyright (c) 2024 Sourish Chakraborty
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -19,3 +30,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```
