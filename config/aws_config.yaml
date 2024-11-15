@@ -1,0 +1,5 @@
+aws:
+  region: "us-east-1"
+  lambda_role_arn: "arn:aws:iam::123456789012:role/lambda-execution-role"
+  dynamodb_table_name: "CodeReviewBotConfig"
+  s3_bucket_name: "code-review-bot-storage"
