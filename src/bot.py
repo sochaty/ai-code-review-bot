@@ -1,11 +1,15 @@
 # src/bot.py
 
+import os
 from github import Github
 from src.code_analyzer.analyzer import CodeAnalyzer
 
 # Initialize GitHub client (replace with your GitHub token)
-GITHUB_TOKEN = "your_github_token"
-github_client = Github(GITHUB_TOKEN)
+github_token = os.getenv("GTHUB_TOKEN")
+github_client = Github(github_token)
+
+if not github_token:
+    raise ValueError("GITHUB_TOKEN environment variable is not set.")
 
 # Initialize code analyzer
 analyzer = CodeAnalyzer()
